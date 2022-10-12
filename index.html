@@ -26,6 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                 </ul>
             </div>
         </nav>
@@ -39,16 +43,187 @@
                         <span class="text-primary">Govedič</span>
                     </h1>
                     <div class="subheading mb-5">
-                        450 Memorial Drive · Cambridge, MA 02139 · (857) 756-5644 ·
+                        7 Granite Street · Cambridge, MA 02139 · (857) 756-5644 ·
                         <a href="mailto:lgovedic@mit.edu">lgovedic@mit.edu</a>
                     </div>
                     <p class="lead mb-5">I am a software engineer, specializing in systems, performance engineering, and security. I enjoy designing and building complex systems from scratch and I do my best work at the intersection of performance and security.</p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/luka-govedic/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/ProExpertProg/"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="social-icon" href="https://twitter.com/luka_govedic"><i class="fab fa-twitter"></i></a>
+                        <a class="social-icon" href="https://www.facebook.com/luka.govedic/"><i class="fab fa-facebook-f"></i></a>
                     </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Teaching Assistant for 6.1120 (Dynamic Computer Language Engineering)</h3>
+                            <div class="subheading mb-3">MIT</div>
+                            <p>Class of 30+ people. Taught introduction to C++, staffed office hours and provided help with the project, from parsing to garbage collection and JIT-compilation. Drastically improved the skeleton code to use smart pointers and CMake.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2022 - December 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Undergraduate/Graduate Researcher</h3>
+                            <div class="subheading mb-3">Supertech group, CSAIL, MIT</div>
+                            <p>Designed and implemented a brand-new protocol for scheduling parallel for-loops in Cilk, a cutting-edge fork-join parallelization runtime system.</p>
+                            <ul>
+                                <li>Achieved a 2x speedup over state-of-the-art with unoptimized prototype</li>
+                                <li>Worked with LLVM compiler infrastructure</li>
+                                <li>Targeting publication</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2020 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Performance Engineering Intern</h3>
+                            <div class="subheading mb-3">Neural Magic</div>
+                            <p>Added end-to-end support for the bfloat16 data type to the inference engine to reduce data movement by up to 50%.</p>
+                            <ul>
+                                <li>Wrote 3000+ lines of C++17, used Xbyak to emit AVX-512 SIMD instructions.</li>
+                                <li>Added custom SFINAE-based type-traits to make the code more generic</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2022 – August 2022</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Embedded Firmware Engineering Intern</h3>
+                            <div class="subheading mb-3">Verkada</div>
+                            <p>Devised, designed, and implemented a backend service to support firmware updating and downloads. Worked with Backend engineers as well as Firmware.</p>
+                            <ul>
+                                <li>Wrote 5000+ lines of Go (using Fiber framework), deployed on ArgoCD & K8s</li>
+                                <li>Crucial service, used by 200,000 devices every day (more added daily)</li>
+                                <li>Implemented a cross-microservice authentication protocol</li>
+                                <li>Devised a new middleware-based error-reporting scheme for all microservices</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2021 – August 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Software Engineering Intern</h3>
+                            <div class="subheading mb-3">Expanse</div>
+                            <p>Designed, built, tested, and deployed a honeypot to monitor malicious scanning activity on the internet. Worked across teams to drive the design specification.</p>
+                            <ul>
+                                <li>Learned Go and wrote 3000+ lines of it, and Java code for the ingest interface</li>
+                                <li>Used Ansible for Infrastructure as Code provisioning and deployed it in Docker</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2020 – August 2020</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Embedded Systems Intern</h3>
+                            <div class="subheading mb-3">Indigo Technologies</div>
+                            <p>Programmed the motor inverter controllers on their electric car and designed a PCB for driving contactors connecting motors to the batteries.</p>
+                            <ul>
+                                <li>Programmed TMS1227 ARM processors using C on top of SafeRTOS</li>
+                                <li>Designed an isolated contactor driver PCB with Altium and LTSpice</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">May 2019 – August 2019</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Avionics Subteam Leader/Member</h3>
+                            <div class="subheading mb-3">MIT Rocket Team</div>
+                            <p>Designing PCBs, writing code and tests for multi-threaded embedded systems with real-time position estimation, telemetry, and parachute deployment for a rocket going to space. Leader of avionics (15 people) between 3/2019 – 8/2020.</p>
+                            <ul>
+                                <li>Using the MbedOS RTOS with CMake, unit tests in C++ using GoogleTest</li>
+                                <li>Configured debugging with SEGGER JLink through JTAG with platformio</li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 – May 2022</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Massachusetts Institute of Technology</h3>
+                            <div class="subheading mb-3">Bachelor of Science 22', Master of Engineering 23'</div>
+                            <div>Electrical Engineering and Computer Science</div>
+                            <div>Minors: Physics, Music</div>
+                            <div>
+                                GPA:
+                                <b>4.7</b>
+                            </div>
+                            <div>Relevant classes:</div>
+                            <ul>
+                                <li>
+                                    <b>6.172:</b>
+                                    Performance engineering
+                                </li>
+                                <li>
+                                    <b>6.035:</b>
+                                    Compiler Engineering
+                                </li>
+                                <li>
+                                    <b>6.818:</b>
+                                    Dynamic Computer Language Engineering
+                                </li>
+                                <li>
+                                    <b>6.S081:</b>
+                                    Intro to Operating Systems
+                                </li>
+                                <li>
+                                    <b>6.046:</b>
+                                    Advanced algorithms
+                                </li>
+                                <li>
+                                    <b>6.857 (G):</b>
+                                    Network and computer security (A+)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 2018 - Present</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages (Lines of Code)</div>
+                    <ul>
+                        <li>C++ (33,000+)</li>
+                        <li>Go (8,000+)</li>
+                        <li>JavaScript (7,000+)</li>
+                        <li>C (4,000+)</li>
+                        <li>Java (2,000+)</li>
+                        <li>Python (1,500+)</li>
+                        <li>Kotlin (1,000+)</li>
+                    </ul>
+                    <div class="subheading mb-3">Areas of Expertise</div>
+                    <ul>
+                        <li>Parallel algorithms</li>
+                        <li>Performance engineering</li>
+                        <li>Cyber & Network Security</li>
+                        <li>Reverse engineering</li>
+                        <li>Embedded systems</li>
+                    </ul>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>Apart from being a software developer/researcher, I spend most of my time doing sports. I am a semi-professional ultimate player in the AUDL for Boston Glory, and I play for my college team at MIT.</p>
+                    <p class="mb-0">I also like to spend my time writing music, especially film scores. Sometimes, I like to play drums and jam with my friends.</p>
                 </div>
             </section>
             <hr class="m-0" />

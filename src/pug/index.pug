@@ -36,6 +36,14 @@ html(lang='en')
                 ul.navbar-nav
                     li.nav-item
                         a.nav-link.js-scroll-trigger(href='#about') About
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#education') Education
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#interests') Interests
 
         // Page Content
         .container-fluid.p-0
@@ -47,7 +55,7 @@ html(lang='en')
                         | Luka
                         span.text-primary Govedič
                     .subheading.mb-5
-                        | 450 Memorial Drive · Cambridge, MA 02139 · (857) 756-5644 ·
+                        | 7 Granite Street · Cambridge, MA 02139 · (857) 756-5644 ·
                         a(href='mailto:lgovedic@mit.edu') lgovedic@mit.edu
                     p.lead.mb-5
                         | I am a software engineer, specializing in systems, performance engineering, and security. I enjoy designing and building complex systems from scratch and I do my best work at the intersection of performance and security.
@@ -56,11 +64,167 @@ html(lang='en')
                             i.fab.fa-linkedin-in
                         a.social-icon(href='https://github.com/ProExpertProg/')
                             i.fab.fa-github
-                        a.social-icon(href='#!')
+                        a.social-icon(href='https://twitter.com/luka_govedic')
                             i.fab.fa-twitter
-                        a.social-icon(href='#!')
+                        a.social-icon(href='https://www.facebook.com/luka.govedic/')
                             i.fab.fa-facebook-f
 
+            hr.m-0
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-5 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Teaching Assistant for 6.1120 (Dynamic Computer Language Engineering)
+                            .subheading.mb-3 MIT
+                            p Class of 30+ people. Taught introduction to C++, staffed office hours and provided help with the project, from parsing to garbage collection and JIT-compilation. Drastically improved the skeleton code to use smart pointers and CMake.
+                        .flex-shrink-0
+                            span.text-primary September 2022 - December 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Undergraduate/Graduate Researcher
+                            .subheading.mb-3 Supertech group, CSAIL, MIT
+                            p Designed and implemented a brand-new protocol for scheduling parallel for-loops in Cilk, a cutting-edge fork-join parallelization runtime system.
+                            ul
+                                li Achieved a 2x speedup over state-of-the-art with unoptimized prototype
+                                li Worked with LLVM compiler infrastructure
+                                li Targeting publication
+                        .flex-shrink-0
+                            span.text-primary January 2020 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Software Performance Engineering Intern
+                            .subheading.mb-3 Neural Magic
+                            p Added end-to-end support for the bfloat16 data type to the inference engine to reduce data movement by up to 50%.
+                            ul
+                                li Wrote 3000+ lines of C++17, used Xbyak to emit AVX-512 SIMD instructions.
+                                li Added custom SFINAE-based type-traits to make the code more generic
+                        .flex-shrink-0
+                            span.text-primary June 2022 – August 2022
+
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Embedded Firmware Engineering Intern
+                            .subheading.mb-3 Verkada
+                            p Devised, designed, and implemented a backend service to support firmware updating and downloads. Worked with Backend engineers as well as Firmware.
+                            ul
+                                li Wrote 5000+ lines of Go (using Fiber framework), deployed on ArgoCD & K8s
+                                li Crucial service, used by 200,000 devices every day (more added daily)
+                                li Implemented a cross-microservice authentication protocol
+                                li Devised a new middleware-based error-reporting scheme for all microservices
+                        .flex-shrink-0
+                            span.text-primary June 2021 – August 2021
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Software Engineering Intern
+                            .subheading.mb-3 Expanse
+                            p Designed, built, tested, and deployed a honeypot to monitor malicious scanning activity on the internet. Worked across teams to drive the design specification.
+                            ul
+                                li Learned Go and wrote 3000+ lines of it, and Java code for the ingest interface
+                                li Used Ansible for Infrastructure as Code provisioning and deployed it in Docker
+                        .flex-shrink-0
+                            span.text-primary June 2020 – August 2020
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Embedded Systems Intern
+                            .subheading.mb-3 Indigo Technologies
+                            p Programmed the motor inverter controllers on their electric car and designed a PCB for driving contactors connecting motors to the batteries.
+                            ul
+                                li Programmed TMS1227 ARM processors using C on top of SafeRTOS
+                                li Designed an isolated contactor driver PCB with Altium and LTSpice
+                        .flex-shrink-0
+                            span.text-primary May 2019 – August 2019
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Avionics Subteam Leader/Member
+                            .subheading.mb-3 MIT Rocket Team
+                            p Designing PCBs, writing code and tests for multi-threaded embedded systems with real-time position estimation, telemetry, and parachute deployment for a rocket going to space. Leader of avionics (15 people) between 3/2019 – 8/2020.
+                            ul
+                                li Using the MbedOS RTOS with CMake, unit tests in C++ using GoogleTest
+                                li Configured debugging with SEGGER JLink through JTAG with platformio
+                        .flex-shrink-0
+                            span.text-primary September 2018 – May 2022
+
+            hr.m-0
+
+            // Education
+            section#education.resume-section
+                .resume-section-content
+                    h2.mb-5 Education
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Massachusetts Institute of Technology
+                            .subheading.mb-3 Bachelor of Science 22', Master of Engineering 23'
+                            div Electrical Engineering and Computer Science
+                            div Minors: Physics, Music
+                            div GPA:
+                                b 4.7
+                            div Relevant classes:
+                            ul
+                                li
+                                    b 6.172:
+                                    | Performance engineering
+                                li
+                                    b 6.035:
+                                    | Compiler Engineering
+                                li
+                                    b 6.818:
+                                    | Dynamic Computer Language Engineering
+                                li
+                                    b 6.S081:
+                                    | Intro to Operating Systems
+                                li
+                                    b 6.046:
+                                    | Advanced algorithms
+                                li
+                                    b 6.857 (G):
+                                    | Network and computer security (A+)
+                        .flex-shrink-0
+                            span.text-primary September 2018 - Present
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    .subheading.mb-3 Programming Languages (Lines of Code)
+                    ul
+                        li C++ (33,000+)
+                        li Go (8,000+)
+                        li JavaScript (7,000+)
+                        li C (4,000+)
+                        li Java (2,000+)
+                        li Python (1,500+)
+                        li Kotlin (1,000+)
+                    .subheading.mb-3 Areas of Expertise
+                    ul
+                        li Parallel algorithms
+                        li Performance engineering
+                        li Cyber & Network Security
+                        li Reverse engineering
+                        li Embedded systems
+
+            hr.m-0
+
+            // Interests
+            section#interests.resume-section
+                .resume-section-content
+                    h2.mb-5 Interests
+                    p
+                        | Apart from being a software developer/researcher, I spend most of my time doing sports. I am a semi-professional ultimate player in the AUDL for Boston Glory, and I play for my college team at MIT.
+                    p.mb-0
+                        | I also like to spend my time writing music, especially film scores. Sometimes, I like to play drums and jam with my friends.
             hr.m-0
 
         // Bootstrap core JS
