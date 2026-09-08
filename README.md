@@ -9,16 +9,6 @@ npm run dev      # localhost:4321
 npm run build    # writes dist/
 ```
 
-## Before it goes live
-
-1. `src/site.config.ts` — set your real email and Google Scholar link.
-2. `public/profile.jpg` — drop in your photo (square, ~400px). The layout shows it at 128px.
-3. `public/cv.pdf` — CV, linked from the header.
-4. `src/components/sections/Vllm.astro` — real vLLM Slack invite link and the right channel name.
-5. `src/components/Intro.astro` — the two intro paragraphs are prose, edit directly.
-6. Repo settings → Pages → Source: **GitHub Actions** (not "Deploy from a branch"). The old
-   Bootstrap files in the repo root should be deleted first.
-
 ## Adding things
 
 **A news item** — `src/data/news.ts`, newest first. `body` takes HTML so you can link out:
