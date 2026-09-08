@@ -40,7 +40,7 @@ nav .me { color: var(--ink); font-weight: 600; margin-right: auto; }
 
 /* header ------------------------------------------------------------- */
 header.intro { padding: 3.25rem 0 2.5rem; }
-.id { display: flex; gap: 1.75rem; align-items: flex-start; justify-content: space-between; margin-bottom: 1.75rem; }
+.id { display: flex; gap: 1.75rem; align-items: center; justify-content: space-between; margin-bottom: 1.75rem; }
 .id-head { min-width: 0; }
 .id h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 0.15rem; font-weight: 600; letter-spacing: -0.01em; }
 .id .pron { color: var(--muted); font-size: 0.8rem; margin: 0 0 0.75rem; }
@@ -49,9 +49,11 @@ header.intro { padding: 3.25rem 0 2.5rem; }
 .id .addr { color: var(--muted); font-size: 0.85rem; line-height: 1.5; margin: 0; }
 .ai-note { display: none; }
 .portrait {
-  flex: 0 0 128px; height: 128px; border-radius: 3px; background: var(--tint);
-  display: grid; place-items: center; color: var(--accent); font-size: 0.75rem; text-align: center;
-  object-fit: cover;
+  flex: 0 0 auto; width: 200px; height: 200px;
+  border-radius: 50%; background: var(--tint); object-fit: cover;
+}
+@media (max-width: 34rem) {
+  .portrait { width: 96px; height: 96px; }
 }
 .lede { font-size: 1.05rem; margin: 0 0 1rem; max-width: 60ch; }
 .links { display: flex; flex-wrap: wrap; gap: 0.9rem; margin-top: 1.1rem; font-size: 0.92rem; }
