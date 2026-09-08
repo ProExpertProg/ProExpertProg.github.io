@@ -32,7 +32,7 @@ export type Section = {
 export const sections: Section[] = [
   { id: 'news', label: 'News', enabled: true },
   { id: 'research', label: 'Research', enabled: false }, // turn on when there is something to show
-  { id: 'projects', label: 'Projects', enabled: true },
+  { id: 'projects', label: 'Projects', enabled: false },
   { id: 'vllm', label: 'vLLM', enabled: true },
   { id: 'teaching', label: 'Teaching', enabled: false },
   { id: 'music', label: 'Music', enabled: true },

@@ -42,7 +42,10 @@ nav .me { color: var(--ink); font-weight: 600; margin-right: auto; }
 header.intro { padding: 3.25rem 0 2.5rem; }
 .id { display: flex; gap: 1.75rem; align-items: flex-start; }
 .id h1 { font-size: 2.1rem; line-height: 1.15; margin: 0 0 0.5rem; font-weight: 600; letter-spacing: -0.01em; }
-.id .pron { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.9rem; }
+.id .pron { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.4rem; }
+.contact-line { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.9rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.contact-line .reduction { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.ai-note { display: none; }
 .portrait {
   flex: 0 0 128px; height: 128px; border-radius: 3px; background: var(--tint);
   display: grid; place-items: center; color: var(--accent); font-size: 0.75rem; text-align: center;

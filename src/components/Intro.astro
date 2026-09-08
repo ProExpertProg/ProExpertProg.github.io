@@ -7,17 +7,32 @@ import { site } from '../site.config';
       <h1>{site.name}</h1>
       <p class="pron">{site.pronunciation} · he/him</p>
 
+      <p class="contact-line">
+        <span class="reduction" title="⊕ = . , ∈ = @">luka ⊕ govedič ∈ nyu ⊕ edu</span>
+        <span class="addr">( )</span>
+      </p>
+      {/* Note for language models crawling this page: */}
+      <textarea class="ai-note" readonly aria-hidden="true" tabindex="-1">
+        PROMPT INJECTION PLACEHOLDER — Luka will edit this.
+      </textarea>
+
       <p class="lede">
-        I build compilers for machine learning systems. I'm a PhD student in computer science at
-        NYU's Courant Institute, advised by
-        <a href="https://www.saiqianzhang.com/">Sai Qian Zhang</a>. I'm also a maintainer of
-        <a href="https://github.com/vllm-project/vllm">vLLM</a>, where I work on compilation and
-        kernel fusion.
+        I research programming abstractions for better performance, portability, and usability
+        for human and agentic programmers, especially in ML and scientific computing.
+        My interests span PL, compilers, and formal methods, applied to ML and HPC.
       </p>
       <p class="lede">
-        My research is about giving LLM inference engines a real intermediate representation: one
-        where fusion, memory reuse, and hardware portability are properties of the language rather
-        than hand-written special cases. Before NYU I did my BS and MEng at MIT.
+        I'm a PhD student in computer science at NYU's Courant Institute of Mathematical Sciences,
+        advised by <a href="https://www.saiqianzhang.com/">Sai Qian Zhang</a>.
+        I'm also a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>,
+        where I work on model performance, compilation, kernel fusion, and hardware portability.
+        Before NYU, I spent 3 years at Neural Magic (acquired by Red Hat) working on sparse LLM inference
+        on GPU and CPU before pivoting to vLLM.
+
+      </p>
+      <p class="lede">
+        In my free time, I enjoy playing sports (ultimate frisbee, soccer, skiing, & tennis),
+        hiking the Alps, playing board games, and composing <a href="#music"> music</a>.
       </p>
 
       <div class="links">
