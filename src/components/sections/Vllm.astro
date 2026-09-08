@@ -5,23 +5,25 @@ import { site } from '../../site.config';
   <div class="wrap">
     <h2>vLLM</h2>
     <p>
-      I'm a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>, mostly in the
-      compilation stack: <code>torch.compile</code> integration, fusion passes, and CUDA graphs.
+      I'm a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>, where I focus on
+      efficient and portable execution of the model forward pass:
+      <code>torch.compile</code> integration, fusion passes, kernels, and CUDA graphs.
+      I am a code owner for the compilation infrastructure, as well as hardware-agnostic model
+      definitions and related portability abstractions.
     </p>
 
     <div class="callout">
       <p>
-        <b>Need a PR reviewed?</b> Ping me in the <a href="#">vLLM Slack</a> — the
-        <code>#feat-torch-compile</code> channel is better than a DM, and better still is a link to
-        the PR with one sentence on what it changes and how you tested it. I don't reliably see
-        GitHub mentions.
+        <b>Need a PR reviewed?</b> See instructions <a href="https://docs.vllm.ai/en/latest/contributing/">here</a>.
+        If the PR explicitly touches one of the areas mentioned above, you can DM me on vLLM Slack.
+        Please include a short description of the PR and justification why you want me to review it.
+        NB: I don't check GitHub mentions for the vllm repo (20+ notifications a day).
       </p>
     </div>
 
     <p class="quiet">
-      I take a small number of consulting engagements on vLLM performance — compilation, fusion, and
-      inference throughput. <a href={`mailto:${site.email}`}>Email me</a> if that's useful to your
-      team.
+      If you're looking for advice on vLLM deployment and performance, I also offer consultations.
+      Please email me for more information.
     </p>
   </div>
 </section>
