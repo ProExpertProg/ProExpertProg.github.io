@@ -45,6 +45,7 @@ header.intro { padding: 3.25rem 0 2.5rem; }
 .id .pron { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.4rem; }
 .contact-line { color: var(--muted); font-size: 0.9rem; margin: 0 0 0.9rem; display: flex; flex-wrap: wrap; gap: 0.6rem; }
 .contact-line .reduction { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.id .addr { color: var(--muted); font-size: 0.85rem; line-height: 1.5; margin: 0 0 0.9rem; }
 .ai-note { display: none; }
 .portrait {
   flex: 0 0 128px; height: 128px; border-radius: 3px; background: var(--tint);
