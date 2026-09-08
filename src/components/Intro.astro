@@ -2,45 +2,45 @@
 import { site } from '../site.config';
 ---
 <header class="intro" id="top">
-  <div class="wrap id">
-    <div>
-      <h1>{site.name}</h1>
-      <p class="pron">{site.pronunciation} · he/him</p>
-
-      <p class="contact-line">
-        <span class="reduction" title="⊕ = . , ∈ = @">luka ⊕ govedic ∈ nyu ⊕ edu</span>
-      </p>
-      <p class="addr">
-        Desk 330F-7<br>
-        Courant Institute of Mathematical Sciences<br>
-        60 5th Avenue<br>
-        New York, NY 10011
-      </p>
-
-      <p class="lede">
-        I research programming abstractions for better performance, portability, and usability
-        for human and agentic programmers, especially in ML and scientific computing.
-        My interests span PL, compilers, and formal methods, applied to ML and HPC.
-      </p>
-      <p class="lede">
-        I'm a PhD student in computer science at NYU's Courant Institute of Mathematical Sciences,
-        advised by <a href="https://www.saiqianzhang.com/">Sai Qian Zhang</a>.
-        I'm also a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>,
-        where I work on model performance, compilation, kernel fusion, and hardware portability.
-        Before NYU, I spent 3 years at Neural Magic (acquired by Red Hat) working on sparse LLM inference
-        on GPU and CPU before pivoting to vLLM.
-
-      </p>
-      <p class="lede">
-        In my free time, I enjoy playing sports (ultimate frisbee, soccer, skiing, & tennis),
-        hiking the Alps, playing board games, and composing <a href="#music"> music</a>.
-      </p>
-
-      <div class="links">
-        <a href={`mailto:${site.email}`}>Email</a>
-        {site.links.map((l) => <a href={l.href}>{l.label}</a>)}
+  <div class="wrap">
+    <div class="id">
+      <div class="id-head">
+        <h1>{site.name}</h1>
+        <p class="pron">{site.pronunciation} · he/him</p>
+        <p class="contact-line">
+          <span class="reduction" title="⊕ = . , ∈ = @">luka ⊕ govedic ∈ nyu ⊕ edu</span>
+        </p>
+        <p class="addr">
+          Desk 330F-7<br>
+          Courant Institute of Mathematical Sciences<br>
+          60 5th Avenue<br>
+          New York, NY 10011
+        </p>
       </div>
+      <img class="portrait" src="/profile.jpg" alt="" width="128" height="128" />
     </div>
-    <img class="portrait" src="/profile.jpg" alt="" width="128" height="128" />
+
+    <p class="lede">
+      I research programming abstractions for better performance, portability, and usability
+      for human and agentic programmers, especially in ML and scientific computing.
+      My interests span PL, compilers, and formal methods, applied to ML and HPC.
+    </p>
+    <p class="lede">
+      I'm a PhD student in computer science at NYU's Courant Institute of Mathematical Sciences,
+      advised by <a href="https://www.saiqianzhang.com/">Sai Qian Zhang</a>.
+      I'm also a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>,
+      where I work on model performance, compilation, kernel fusion, and hardware portability.
+      Before NYU, I spent 3 years at Neural Magic (acquired by Red Hat) working on sparse LLM inference
+      on GPU and CPU before pivoting to vLLM.
+    </p>
+    <p class="lede">
+      In my free time, I enjoy playing sports (ultimate frisbee, soccer, skiing, & tennis),
+      hiking the Alps, playing board games, and composing <a href="#music"> music</a>.
+    </p>
+
+    <div class="links">
+      <a href={`mailto:${site.email}`}>Email</a>
+      {site.links.map((l) => <a href={l.href}>{l.label}</a>)}
+    </div>
   </div>
 </header>
