@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import Intro from '../components/Intro.astro';
+import { enabledSections } from '../site.config';
+
+import News from '../components/sections/News.astro';
+import Research from '../components/sections/Research.astro';
+import Projects from '../components/sections/Projects.astro';
+import Vllm from '../components/sections/Vllm.astro';
+import Teaching from '../components/sections/Teaching.astro';
+import Music from '../components/sections/Music.astro';
+import Contact from '../components/sections/Contact.astro';
+
+// Register every section component here. site.config.ts decides which ones render.
+const sectionComponents: Record<string, any> = {
+  news: News,
+  research: Research,
+  projects: Projects,
+  vllm: Vllm,
+  teaching: Teaching,
+  music: Music,
+  contact: Contact,
+};
+---
+<Base home={true}>
+  <Intro />
+  <main>
+    {enabledSections.map((s) => {
+      const Section = sectionComponents[s.id];
+      return Section ? <Section /> : null;
+    })}
+  </main>
+</Base>

@@ -1,0 +1,17 @@
+---
+import { projects } from '../../data/projects';
+---
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p class="sub">Systems work that isn't a paper — open source, coursework, and older things.</p>
+    <ul class="stack">
+      {projects.map((p) => (
+        <li>
+          <h3>{p.href ? <a href={p.href}>{p.title}</a> : p.title}</h3>
+          <p>{p.body}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

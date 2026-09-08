@@ -1,0 +1,24 @@
+---
+import { site } from '../site.config';
+interface Props { entry: any }
+const { entry } = Astro.props;
+const d = entry.data;
+---
+<article class="card">
+  <div class="fig">
+    {d.figure && <img src={d.figure} alt={d.figureAlt ?? ''} />}
+  </div>
+  <div>
+    <span class:list={['venue', d.inProgress && 'wip']}>{d.venue}</span>
+    <h3>{d.title}</h3>
+    <p class="authors">
+      {d.authors.map((a: string, i: number) => (
+        <>{i > 0 && ', '}{a === site.name ? <b>{a}</b> : a}</>
+      ))}
+    </p>
+    <p class="gist">{d.gist}</p>
+    <div class="refs">
+      {Object.entries(d.links).map(([label, href]) => <a href={href as string}>{label}</a>)}
+    </div>
+  </div>
+</article>

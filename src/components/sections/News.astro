@@ -1,0 +1,16 @@
+---
+import { news } from '../../data/news';
+---
+<section id="news">
+  <div class="wrap">
+    <h2>News</h2>
+    <ul class="news">
+      {news.map((n) => (
+        <li>
+          <time>{n.date}</time>
+          <p set:html={n.body} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

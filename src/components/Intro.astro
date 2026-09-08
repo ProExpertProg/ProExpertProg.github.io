@@ -1,0 +1,30 @@
+---
+import { site } from '../site.config';
+---
+<header class="intro" id="top">
+  <div class="wrap id">
+    <div>
+      <h1>{site.name}</h1>
+      <p class="pron">{site.pronunciation} · he/him</p>
+
+      <p class="lede">
+        I build compilers for machine learning systems. I'm a PhD student in computer science at
+        NYU's Courant Institute, advised by
+        <a href="https://www.saiqianzhang.com/">Sai Qian Zhang</a>. I'm also a maintainer of
+        <a href="https://github.com/vllm-project/vllm">vLLM</a>, where I work on compilation and
+        kernel fusion.
+      </p>
+      <p class="lede">
+        My research is about giving LLM inference engines a real intermediate representation: one
+        where fusion, memory reuse, and hardware portability are properties of the language rather
+        than hand-written special cases. Before NYU I did my BS and MEng at MIT.
+      </p>
+
+      <div class="links">
+        <a href={`mailto:${site.email}`}>Email</a>
+        {site.links.map((l) => <a href={l.href}>{l.label}</a>)}
+      </div>
+    </div>
+    <img class="portrait" src="/profile.jpg" alt="" width="128" height="128" />
+  </div>
+</header>

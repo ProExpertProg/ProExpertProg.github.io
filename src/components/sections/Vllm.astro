@@ -1,0 +1,27 @@
+---
+import { site } from '../../site.config';
+---
+<section id="vllm">
+  <div class="wrap">
+    <h2>vLLM</h2>
+    <p>
+      I'm a maintainer of <a href="https://github.com/vllm-project/vllm">vLLM</a>, mostly in the
+      compilation stack: <code>torch.compile</code> integration, fusion passes, and CUDA graphs.
+    </p>
+
+    <div class="callout">
+      <p>
+        <b>Need a PR reviewed?</b> Ping me in the <a href="#">vLLM Slack</a> — the
+        <code>#feat-torch-compile</code> channel is better than a DM, and better still is a link to
+        the PR with one sentence on what it changes and how you tested it. I don't reliably see
+        GitHub mentions.
+      </p>
+    </div>
+
+    <p class="quiet">
+      I take a small number of consulting engagements on vLLM performance — compilation, fusion, and
+      inference throughput. <a href={`mailto:${site.email}`}>Email me</a> if that's useful to your
+      team.
+    </p>
+  </div>
+</section>

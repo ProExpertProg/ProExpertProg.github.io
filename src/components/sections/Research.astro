@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import PaperCard from '../PaperCard.astro';
+const papers = (await getCollection('publications')).sort((a, b) => b.data.year - a.data.year);
+---
+<section id="research">
+  <div class="wrap">
+    <h2>Research</h2>
+    <p class="sub">Papers, preprints, and work in progress.</p>
+    {papers.map((entry) => <PaperCard entry={entry} />)}
+  </div>
+</section>
