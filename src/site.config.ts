@@ -10,7 +10,7 @@
 
 export const site = {
   name: 'Luka Govedič',
-  pronunciation: 'GOH-véh-deech',
+  pronunciation: 'Goh-VÉH-deech',
   description:
     'PhD student at NYU Courant working on compilers for machine learning systems, and a maintainer of vLLM.',
   links: [
